@@ -41,13 +41,34 @@ a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색
 }
 #side_banner > .todayview {
     height: 200px;
-    border: 1px solid skyblue;
+    background-color: white;
+    border: 1px solid black;
     box-sizing: border-box;
 }
+#side_banner > .todayview > .todaytitle {
+    height: 35px;
+    background-color: black;
+}
+#side_banner > .todayview > .todaytitle > strong {
+    display: inline-block;
+    color: white;
+    margin: 10px 0px 0px 30px;
+}
+
 #side_banner > .topmove {
     height: 50px;
-    border: 1px solid blue;
+    border: 1px solid #19734f;
     box-sizing: border-box;
+}
+#side_banner > .topmove > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #19734f;
+    font-size: 13px;
+    font-weight: 800;
+    color: #fff;
 }
 
 /* 헤더 */
