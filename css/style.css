@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+
+ /* 초기화 */
+ * {
+    margin: 0;                                /*모든 문자의 margin과 padding 0.*/
+    padding: 0;
+}
+
+body {
+    font: normal 12px '굴림';                 /*body 내의 기본 폰트 설정*/
+}
+
+ul, ol {list-style: none;}                     /* ul, ol 앞에 오는 데코에이션 초기화*/
+a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색으로 설정*/
+/* 사이드배너 */
+#side_banner {
+    position: fixed;
+    width: 140px;
+    top: 50px;
+    right: 50%;
+    margin-right: -745px;
+}
+#side_banner > .monthlylist {
+    height: 135px;
+    margin-bottom: 25px;
+    background: url('../img/golist1.png') no-repeat;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#side_banner > .monthlylist > span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffa02f;
+    margin-top: 80px;
+}
+#side_banner > .monthlylist > h3 {
+    margin-top: 8px;
+}
+#side_banner > .todayview {
+    height: 200px;
+    border: 1px solid skyblue;
+    box-sizing: border-box;
+}
+#side_banner > .topmove {
+    height: 50px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+}
+header > div {
+    width: 1150px;
+    margin: 0 auto;
+}
+header > #top_header {
+    width: 100%;
+    overflow: hidden;
+    height: 35px;
+    background: #fbfbfb;
+    border-bottom: 1px solid #e8e8e8;
+}
+header > #top_header > div {
+    width: 1150px;
+    margin: 0 auto;
+}
+header > #top_header ul {
+    float: right;
+    display: inline;
+}
+header > #top_header li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+header > #nav_header {
+    height: 99px;
+}
+header> #nav_header > div {
+    border: 1px solid red;
+    box-sizing: border-box;
+    display: inline-block;
+}
+header> #nav_header .logo a {
+    background: url('../img/logo.png') no-repeat center;
+    background-size: 90%;
+}
+header> #nav_header > .gnb {
+    width: 100%;
+    height: 100%;
+}
+header> #nav_header > .gnb > div:nth-of-type(1) {
+    width: 26%;
+}
+header> #nav_header > .gnb > div {
+    float: left;
+    width: 18%;
+    height: 100%;
+}
+header> #nav_header > .gnb >div > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+header> #nav_header > .gnb h3 {
+    text-align: center;
+    margin-top: 18%;
+    font-size: 28px;
+    font-weight: 100;
+    font-family: 'Jua', sans-serif;
+
+}
+
+/* 메인 */
+main > div {
+    width: 100%;
+    border: 1px solid green;
+}
+main > div > div {
+    width: 1150px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+main > .adbanner1 {
+    width: 100%;
+    height: 500px;
+    background: #f1f1f1;
+}
+main > .shortcuts {
+    height: 450px;
+}
+main > .bestgoods {
+    height: 100px;
+    background: #f1f1f1;
+}
+main > .adbanner2 {
+    height: 100px;
+}
+main > .TVarea {
+    height: 100px;
+}
+main > .recentlist {
+    height: 282px;
+    background: #f1f1f1;
+}
+/* 푸터 */
+footer {
+    background: #eaeaea;
+    color: #666666;
+    font-size: 12px;
+}
+footer a {
+    color: #666666;
+    font-size: 13px;
+}
+footer > div {
+    border-top: 1px solid #d0d0d0;
+}
+footer > div > div {
+    width: 1150px;
+    margin: 0 auto;
+}
+footer > #top_footer {
+    height: 50px;
+}
+footer > #top_footer li {
+    float: left;
+    margin-right: 3px;
+    margin-top: 18px;
+}
+
+
+footer > #bot_footer {
+    padding-top: 32px;
+    height: 120px;
+}
+footer > #bot_footer span {
+    font-weight: bold;
+}
