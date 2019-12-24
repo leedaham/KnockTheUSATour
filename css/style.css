@@ -54,7 +54,9 @@ a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색
     color: white;
     margin: 10px 0px 0px 30px;
 }
-
+#side_banner > .todayview > div > p {
+    padding: 4px 0 0 6px;
+}
 #side_banner > .topmove {
     height: 50px;
     border: 1px solid #19734f;
@@ -157,16 +159,153 @@ main > .adbanner1 {
     height: 500px;
     background: #f1f1f1;
 }
+main > .adbanner1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+
 main > .shortcuts {
     height: 450px;
+    padding-top: 60px;
 }
+main > div > h2 {
+    font-size: 45px;
+    font-weight: 100;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+}
+main > div > p {
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    color: #666666;
+    margin-bottom: 30px;
+    text-align: center;
+}
+main > .shortcuts > div {
+    
+}
+
+main > .shortcuts li {
+    float: left;
+    width: 16%;
+    margin-left: 7px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Jua', sans-serif;
+}
+main > .shortcuts img {
+    width: 100%;
+}
+
+
 main > .bestgoods {
-    height: 100px;
+    height: 700px;
     background: #f1f1f1;
 }
-main > .adbanner2 {
-    height: 100px;
+main > .bestgoods li {
+    float: left;
+    margin: 0px 35px 0px 0px;
 }
+main > .bestgoods li:nth-of-type(1) {
+    margin-left: 0px;
+}
+main > .bestgoods li:nth-of-type(3) {
+    margin-right: 0px;
+}
+main > .bestgoods .imgbox {
+    width: 360px;
+    height: 285px;
+}
+main > .bestgoods .txtbox {
+    width: 360px;
+    background: #fff;
+    height: 175px;
+}
+main > .bestgoods .txtbox span {
+    display: block;
+}
+main > .bestgoods .txtbox .area {
+    height: 13px;
+    font-family: 'Jua', sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ededed;
+}
+main > .bestgoods .txtbox .depature1 {
+    float: left;
+    font-size: 12px;
+    font-family: 'Jua', sans-serif;
+    color: #000;
+    line-height: 1.6;
+    margin-left: 19px;
+    margin-top: 18px;
+}
+main > .bestgoods .txtbox .subtxt1 {
+    font-size: 12px;
+    font-family: 'Jua', sans-serif;
+    color: #888888;
+    line-height: 1.6;
+    margin-top: 18px;
+    display: block;
+}
+
+main > .bestgoods .txtbox .depature2 {
+    float: left;
+    font-family: 'Jua', sans-serif;
+    font-size: 12px;
+    color: #000;
+    line-height: 1.6;
+    margin-left: 19px;
+}
+main > .bestgoods .txtbox .subtxt2 {
+    font-family: 'Jua', sans-serif;
+    font-size: 12px;
+    color: #888888;
+    margin-left: -62px;
+    line-height: 1.6;
+}
+main > .bestgoods .txtbox .txtprice {
+    float: left;
+    bottom: 15px;
+    margin-top: 30px;
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
+    margin-left: 19px;
+    color: #f18100;
+    font-weight: 400;
+}
+main > .bestgoods .txtbox .depbtn {
+    float: right;
+    display: inline-block;
+    margin-top: 26px;
+    font-family: 'Jua', sans-serif;
+    font-size: 14px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    line-height: 2.4;
+    margin-right: 22px;
+    border: 1px solid #888888;
+}
+
+
+main > .adbanner2 {
+    height: 180px;
+    width: 100%;
+    background: #383a3f;
+    padding: 40px 0 45px 0;
+}
+main > .adbanner2 li:nth-of-type(1){
+    float: left;
+}
+main > .adbanner2 li:nth-of-type(2){
+    float: right;
+}
+
 main > .TVarea {
     height: 100px;
 }
