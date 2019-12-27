@@ -107,16 +107,16 @@ main .informations .inf_sex {
 main .informations .inf_birth {
     float: left;
 }
-main .informations .inf_tel {
+main .informations .inf_hp {
     float: right;
 }
 main .informations .row > span {
     display: inline-block;
-    padding: 15px;
     width: 160px;
     height: 49px;
-    box-sizing: border-box;
+    padding: 15px;
     background-color: #fafafa;
+    box-sizing: border-box;
 }
 main .informations .row > input {
     width: 180px;
@@ -154,7 +154,37 @@ main .register2 {
     margin: 0 auto;
     box-sizing: border-box;
 }
+main .register2 > div {}
+main .register2 > div > span:nth-of-type(1) {
+    display: inline-block;
+    width: 160px;
+    height: 49px;
+    padding: 15px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+main .register2 > div > span:nth-of-type(2) {
+    display: inline-block;
+    width: 160px;
+    height: 49px;
+    padding: 15px;
+    background-color: white;
+    box-sizing: border-box;
+}
+main .register2 > div > .addrBox {
+    height: 80px;
+}
+main .register2 > div > input {
+    width: 180px;
+    height: 25px;
+    margin-left: 16px;
+}
+main .register2 > div > .email1 {width: 140px;}
+main .register2 > div > .email2 {width: 200px;}
+main .register2 > div > .zip {width: 100px;}
+main .register2 > div > .addr {width: 400px;}
 
+main .register2 > div > span {}
 
 
 
