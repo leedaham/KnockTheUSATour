@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/userLogin.css">
+    <link rel="stylesheet" href="../css/userRegister.css">
 
 </head>
 <body>
@@ -35,7 +35,7 @@
                 <ul>
                     <li><a href="../index.html">first page</a></li>
                     <li><a href="./login.html">로그인</a></li>
-                    <li><a href="./registerStep1.html">회원가입</a></li>
+                    <li><a href="./register.html">회원가입</a></li>
                     <li><a href="">예약확인</a></li>
                     <li><a href="">이벤트</a></li>
                     <li><a href="">즐겨찾기 +</a></li>
@@ -59,33 +59,22 @@
     <!-- 콘텐츠 -->
     <main>
         <div>
-            <h1>로그인</h1>
-            <div class="login">
-                <form action="#" method="POST"> 
-                    <input type="hidden" name="" value="">
-                    <div class="loginbox">
-                        <h3>회원 로그인</h3>
-                        <span class="row">
-                            <span>ID</span>
-                            <input type="text" name="userID" title="아이디">
-                        </span>
-                        <span class="row">
-                            <span>PassWord</span>
-                            <input type="password" name="userPW" title="비밀번호">
-                        </span>
-                        <span class="id_save_row">
-                            <input type="checkbox" id="id_save" name="memoryId" class="chk">
-                            <label for="id_save">아이디저장</label>
-                        </span>
-                        <button type="submit" class="btn btn_login">로그인</button>
-                        <div>
-                            <button type="button" class="btn btn_login_other">회원가입</button>
-                            <button type="button" class="btn btn_login_other">아이디/비밀번호 찾기</button>
-                        </div>
-                    </div>
-                </form>
+            <h1>회원가입</h1>
+            <div class="steper">
+                <div class="step">
+                    <span>01. 약관입력</span>
+                </div>
+                <div class="step on">
+                    <span>02. 정보입력</span>
+                </div>
+                <div class="step">
+                    <span>03. 가입완료</span>
+                </div>
             </div>
         </div>
+        <form action="#" method="POST" class="register2"> 
+            <div></div>
+        </form>
     </main>
     <!-- 콘텐츠 끝 -->
     <!-- 푸터 -->

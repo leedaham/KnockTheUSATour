@@ -60,10 +60,10 @@
     <main>
         <div>
             <h1>로그인</h1>
-            <div class="login">
-                <form action="#" method="POST"> 
+            <div class="login_from_resvLi">
+                <form action="#" method="POST" class="member"> 
                     <input type="hidden" name="" value="">
-                    <div class="loginbox">
+                    <div class="loginbox_member">
                         <h3>회원 로그인</h3>
                         <span class="row">
                             <span>ID</span>
@@ -84,6 +84,21 @@
                         </div>
                     </div>
                 </form>
+                <div class="non_member">
+                    <h3>비회원 </h3>
+                    <span class="row">
+                        <span>Name</span>
+                        <input type="text" name="nonuserName" title="이름">
+                    </span>
+                    <span class="row">
+                        <span>Reservation Number</span>
+                        <input type="text" name="resvNo1" title="예약번호1">
+                        <input type="text" name="resvNo2" title="예약번호2">
+                    </span>
+                    <div>
+                        <button type="button" class="btn btn_login"><a href="#">조회하기</a></button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

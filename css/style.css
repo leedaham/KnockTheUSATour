@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
 
  /* 초기화 */
  * {
@@ -7,7 +8,9 @@
 }
 
 body {
-    font: normal 12px '굴림';                 /*body 내의 기본 폰트 설정*/
+    font: normal 12px;          
+    font-family: 'Noto Sans KR', sans-serif;       /*body 내의 기본 폰트 설정*/
+    font-weight: 100;
 }
 
 ul, ol {list-style: none;}                     /* ul, ol 앞에 오는 데코에이션 초기화*/
@@ -23,54 +26,58 @@ a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색
 #side_banner > .monthlylist {
     height: 135px;
     margin-bottom: 25px;
-    background: url('../img/golist1.png') no-repeat;
-    background-color: white;
+    background: url('../img/cal.png') no-repeat;
+    background-size: 50%;
+    background-position-x: center;
     text-align: center;
-    border: 1px solid black;
     box-sizing: border-box;
 }
 #side_banner > .monthlylist > span {
     display: inline-block;
-    font-size: 12px;
-    font-weight: 800;
+    font-size: 10px;
+    font-weight: 100;
     color: #ffa02f;
     margin-top: 80px;
 }
 #side_banner > .monthlylist > h3 {
-    margin-top: 8px;
+    margin-top: -5px;
 }
 #side_banner > .todayview {
     height: 200px;
-    background-color: white;
-    border: 1px solid black;
     box-sizing: border-box;
 }
 #side_banner > .todayview > .todaytitle {
     height: 35px;
+    padding-top: 5px;
     background-color: black;
+    text-align: center;
+    box-sizing: border-box;
 }
-#side_banner > .todayview > .todaytitle > strong {
+#side_banner > .todayview > .todaytitle > span {
     display: inline-block;
+    font-weight: 800;
     color: white;
-    margin: 10px 0px 0px 30px;
 }
 #side_banner > .todayview > div > p {
     padding: 4px 0 0 6px;
+    font-size: 12px;
 }
 #side_banner > .topmove {
     height: 50px;
-    border: 1px solid #19734f;
+    border: 1px solid #ffa02f;
     box-sizing: border-box;
 }
 #side_banner > .topmove > a {
     display: block;
     width: 100%;
     height: 100%;
-    text-align: center;
-    background-color: #19734f;
-    font-size: 13px;
+    padding-top: 10px;
+    font-size: 18px;
     font-weight: 800;
     color: #fff;
+    text-align: center;
+    background-color: #ffa02f;
+    box-sizing: border-box;
 }
 
 /* 헤더 */
@@ -84,11 +91,12 @@ header > div {
 header > #top_header {
     width: 100%;
     overflow: hidden;
-    height: 35px;
+    height: 25px;
     background: #fbfbfb;
     border-bottom: 1px solid #e8e8e8;
 }
 header > #top_header > div {
+    position: relative;
     width: 1150px;
     margin: 0 auto;
 }
@@ -96,22 +104,29 @@ header > #top_header ul {
     float: right;
     display: inline;
 }
+header > #top_header li:first-of-type {
+    position: absolute;
+    left: 0px;
+}
 header > #top_header li {
     float: left;
     margin-right: 10px;
-    margin-top: 10px;
+}
+header > #top_header li > a {
+    font-size: 13px;
+    font-weight: 400;
 }
 
 header > #nav_header {
-    height: 99px;
+    height: 110px;
 }
 header> #nav_header > div {
     box-sizing: border-box;
     display: inline-block;
 }
 header> #nav_header .logo a {
-    background: url('../img/logo.png') no-repeat center;
-    background-size: 90%;
+    background: url('../img/logo1.png') no-repeat center;
+    background-size: 50%;
 }
 header> #nav_header > .gnb {
     width: 100%;
@@ -134,16 +149,19 @@ header> #nav_header > .gnb >div > a {
 }
 header> #nav_header > .gnb h3 {
     text-align: center;
-    margin-top: 18%;
-    font-size: 28px;
-    font-weight: 100;
-    font-family: 'Jua', sans-serif;
+    margin-top: 15%;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
 
 }
 
 /* 메인 */
 main > div {
     width: 100%;
+}
+main > div > h1 {
+    margin-left: 33px;
 }
 main > div > div {
     width: 1150px;
@@ -156,11 +174,25 @@ main > .adbanner1 {
     height: 500px;
     background: #f1f1f1;
 }
+
+main > .adbanner1 li {
+    position: relative;
+}
+main > .adbanner1 li:nth-of-type(2) {
+    display: none;
+}
 main > .adbanner1 img {
     display: block;
     margin: 0 auto;
 }
-
+main > .adbanner1 h3 {
+    position: absolute;
+    color: seashell;
+    font-size: 80px;
+    font-weight: 800;
+    top: 375px;
+    right: 255px;
+}
 
 main > .shortcuts {
     height: 450px;
@@ -169,11 +201,11 @@ main > .shortcuts {
 main > div > h2 {
     font-size: 45px;
     font-weight: 100;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
 }
 main > div > p {
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     color: #666666;
     margin-bottom: 30px;
@@ -189,7 +221,8 @@ main > .shortcuts li {
     margin-left: 7px;
     text-align: center;
     font-size: 20px;
-    font-family: 'Jua', sans-serif;
+    font-weight: 600;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 main > .shortcuts img {
     width: 100%;
@@ -223,27 +256,28 @@ main > .bestgoods .txtbox span {
     display: block;
 }
 main > .bestgoods .txtbox .area {
-    height: 13px;
-    font-family: 'Jua', sans-serif;
+    height: 33px;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
-    color: #333;
     font-weight: 700;
+    color: #333;
     text-align: center;
-    padding: 15px;
+    padding-top: 10px;
     border-bottom: 1px solid #ededed;
 }
 main > .bestgoods .txtbox .depature1 {
     float: left;
     font-size: 12px;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     color: #000;
     line-height: 1.6;
     margin-left: 19px;
+    margin-right: 5px;
     margin-top: 18px;
 }
 main > .bestgoods .txtbox .subtxt1 {
     font-size: 12px;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     color: #888888;
     line-height: 1.6;
     margin-top: 18px;
@@ -252,14 +286,15 @@ main > .bestgoods .txtbox .subtxt1 {
 
 main > .bestgoods .txtbox .depature2 {
     float: left;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
     color: #000;
     line-height: 1.6;
     margin-left: 19px;
+    margin-right: 5px;
 }
 main > .bestgoods .txtbox .subtxt2 {
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
     color: #888888;
     margin-left: -62px;
@@ -269,7 +304,7 @@ main > .bestgoods .txtbox .txtprice {
     float: left;
     bottom: 15px;
     margin-top: 30px;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 20px;
     margin-left: 19px;
     color: #f18100;
@@ -279,7 +314,7 @@ main > .bestgoods .txtbox .depbtn {
     float: right;
     display: inline-block;
     margin-top: 26px;
-    font-family: 'Jua', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
     width: 85px;
     height: 30px;
@@ -331,8 +366,18 @@ main > .TVarea .txt {
 }
 main > .TVarea .txt p {
     font-size: 20px;
-    font-weight: 800;
-    color: rgba(255, 255, 255, 0.945);
+    font-weight: 200;
+    color: seashell;
+}
+main > .TVarea .txt strong {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffa02f;
+}
+main > .TVarea .txt span {
+    font-size: 20px;
+    font-weight: 500;
+    color: seashell;
 }
 
 
@@ -363,6 +408,9 @@ main > .recentlist > div > div > h3 {
 }
 main > .recentlist > div > div > span {
     float: right;
+    font-size: 13px;
+    padding-top: 5px;
+
 }
 
 main > .recentlist .notice > ul {
@@ -370,7 +418,7 @@ main > .recentlist .notice > ul {
     padding-top: 20px;
 }
 main > .recentlist .notice > ul > li {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 main > .recentlist .review > ul {
     clear: left;
@@ -379,7 +427,6 @@ main > .recentlist .review > ul {
 main > .recentlist .review li {
     float: left;
     width: 48%;
-    border: 1px solid black;
     box-sizing: border-box;
 }
 main > .recentlist .review .img {}
@@ -390,6 +437,12 @@ main > .recentlist .review .txt > span {
     display: block;
     padding-bottom: 10px;
 }
+main > .recentlist .review .txt > .title {
+    font-size: 13px;
+}
+main > .recentlist .review .txt > .content {
+    font-size: 14px;
+}
 main > .recentlist .review li > img {
     width: 100%;
     height: 110px;
@@ -398,21 +451,21 @@ main > .recentlist .review li > img {
 main > .recentlist .customer ul {
     float: left;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 5px;
     margin: 0 auto;
     text-align: center;
 }
 main > .recentlist .customer li {}
 main > .recentlist .customer .tel {
     border-bottom: 1px solid #888888;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
 
 }
 main > .recentlist .customer .account {}
 
 main > .recentlist .sponsor > ul {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 
