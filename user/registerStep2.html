@@ -35,7 +35,7 @@
                 <ul>
                     <li><a href="../index.html">first page</a></li>
                     <li><a href="./login.html">로그인</a></li>
-                    <li><a href="./register.html">회원가입</a></li>
+                    <li><a href="./registerStep1.html">회원가입</a></li>
                     <li><a href="">예약확인</a></li>
                     <li><a href="">이벤트</a></li>
                     <li><a href="">즐겨찾기 +</a></li>
@@ -77,9 +77,19 @@
                 <span>성명</span>
                 <span>홍길동</span>
             </div>
-            <div>
+            <div class="emailBox">
                 <span>이메일</span>
                 <input type="text" class="email1"> @ <input type="text" class="email2">
+                <select name="email">
+                    <option value="직접입력">직접입력</option>
+                    <option value="네이버">naver.com</option>
+                    <option value="한메일">hanmail.net</option>
+                    <option value="네이트">nate.com</option>
+                    <option value="구글">google.com</option>
+                    <option value="핫메일">hotmail.com</option>
+                    <option value="드림위즈">dreamwiz.com</option>
+                    <option value="라이코스">lycos.co.kr</option>
+                </select>
             </div>
             <div>
                 <span>생년월일</span>
@@ -92,7 +102,7 @@
             <div>
                 <span>아이디</span>
                 <input type="text">
-                <button>중복체크</button>
+                <button class="btn">중복체크</button>
             </div>
             <div>
                 <span>비밀번호</span>
@@ -105,7 +115,7 @@
             <div class="addrBox">
                 <span>주소</span>
                 <input type="text" class="zip">
-                <button>우편번호찾기</button>
+                <button class="btn">우편번호찾기</button>
                 <input type="text" class="addr" name="addr1">
                 <input type="text" class="addr" name="addr2">
             </div>
@@ -113,22 +123,25 @@
                 <span>핸드폰</span>
                 <span>010-1234-5678</span>
             </div>
-            <div>
+            <div class="telBox">
                 <span>자택번호</span>
-                <input type="text">
+                <input type="text" class="tel" name="tel1">
+                <input type="text" class="tel" name="tel2">
+                <input type="text" class="tel" name="tel3">
             </div>
-            <div>
+            <div class="receiveBox">
                 <span>정보수신</span>
-                <input type="text">
+                <input type="checkbox" id="smsReceive" name="smsReceive" class="chk">
+                <label for="smsReceive">SMS수신</label>
+                <input type="checkbox" id="emailReceive" name="emailReceive" class="chk">
+                <label for="emailReceive">Email수신</label>
             </div>
             <section>
-                <div>
+                <div class="btnBox">
                     <button type="submit" class="btn btn_next">회원가입완료</button>
                     <button type="button" class="btn btn_back"><a href="../home.html">가입취소</a></button>
                 </div>
             </section>
-
-            </div>
         </form>
     </main>
     <!-- 콘텐츠 끝 -->
