@@ -1,21 +1,20 @@
-/* 회사 소개페이지 */
+/* 회사 소개페이지 (공통)*/
 main > .introduce {
     position: relative;
     width: 1150px;
     margin: 0 auto;
     min-height: 840px;
-    border: 1px solid black;
 }
 main > .introduce > h1 {
     margin: 15px 70px;
 }
 
-/* 왼쪽 사이드 바 */
+/* 왼쪽 사이드 바 (공통)*/
 main > .introduce > .side_nav {
     position: absolute;
     width: 160px;
     height: 215px;
-    top: 60px;
+    top: 63px;
     left: -160px;
     border-top: 2px solid #ffa02f;
     border-bottom: 2px solid #ffa02f;
@@ -46,27 +45,112 @@ main > .introduce > .side_nav li > a {
     text-align: center;
 }
 
-    /* 회사 소개부분 */
-main > .introduce > .content {
+/* introduce.html */
+main > .introduce1 > .content {
     width: 900px;
-    height: 1000px;
-    border: 1px solid blueviolet;
-    box-sizing: border-box;
+    height: 100%;
 }
-main > .introduce > .content > .aboutUsImg > img {
+main > .introduce1 > .content > .aboutUsImg > img {
     width: 100%;
 }
-main > .introduce > .content > .aboutUs {
+main > .introduce1 > .content > .aboutUs {
     text-align: center;
     margin-top: 20px;
 }
-main > .introduce > .content > .aboutUs > h1 {
+main > .introduce1 > .content > .aboutUs > h1 {
     font-weight: 400;
 }
-main > .introduce > .content > .aboutUs strong {
+main > .introduce1 > .content > .aboutUs strong {
     color: #ffa02f;
     margin-right: 40px;
 }
+main > .introduce1 > .content > .aboutUs > p {
+    padding: 80px 0px;
+    border-bottom: 1px solid black;
+}
+main > .introduce1 > .content > .aboutUs2 > p {
+    text-align: left;
+    padding-left: 70px;
+}
+main > .introduce1 > .content > .aboutUs3 > p {
+    text-align: left;
+    padding-left: 70px;
+    border-bottom: 0px;
+    padding-bottom: 200px;
+}
+main > .introduce1 > .content > .aboutUs span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* why.html */
+main > .introduce2 > .content {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+main > .introduce2 > .content > .tab {
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+}
+main > .introduce2 > .content > .tab > div {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: #000000;
+    padding-top: 15px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+}
+main > .introduce2 > .content > .tab > div > h3 {
+    font-weight: 400;
+}
+main > .introduce2 > .content > .tab > div.on {
+    background: #ffa02f;
+    border: #ffa02f;;
+}
+main > .introduce2 > .content > .tab > div.on  h3 {
+    color: white;
+}
+main > .introduce2 > .content > .why {
+    display: none;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+main > .introduce2 > .content > .why.on {
+    display: block;
+}
+main > .introduce2 > .content > .why > img {
+    width: 100%;
+}
+
+/* direction.html */
+main > .introduce3 > .content {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+main > .introduce3 > .content > h3 {
+    margin: 30px 0px 0px 80px;
+    font-size: 15px;
+    font-weight: 500;
+}
+main > .introduce3 > .content > .map {
+    width: 820px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+
+
 
 
 

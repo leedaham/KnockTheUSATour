@@ -32,14 +32,14 @@ a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색
     text-align: center;
     box-sizing: border-box;
 }
-#side_banner > .monthlylist > span {
+#side_banner > .monthlylist span {
     display: inline-block;
     font-size: 10px;
     font-weight: 100;
     color: #ffa02f;
     margin-top: 80px;
 }
-#side_banner > .monthlylist > h3 {
+#side_banner > .monthlylist h3 {
     margin-top: -5px;
 }
 #side_banner > .todayview {
