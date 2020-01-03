@@ -232,6 +232,7 @@ main > .shortcuts img {
 main > .bestgoods {
     height: 700px;
     background: #f1f1f1;
+    padding-top: 60px;
 }
 main > .bestgoods li {
     float: left;
@@ -319,7 +320,7 @@ main > .bestgoods .txtbox .depbtn {
     width: 85px;
     height: 30px;
     text-align: center;
-    line-height: 2.4;
+    line-height: 2.1;
     margin-right: 22px;
     border: 1px solid #888888;
 }
@@ -340,6 +341,7 @@ main > .adbanner2 li:nth-of-type(2){
 
 main > .TVarea {
     height: 500px;
+    padding-top: 60px;
 }
 main > .TVarea > ul {
     width: 1150px;
@@ -382,10 +384,11 @@ main > .TVarea .txt span {
 
 
 main > .recentlist {
-    padding: 40px 0px 40px 0px;
     height: 282px;
-    box-sizing: border-box;
+    padding: 40px 0px 40px 0px;
+    margin-top: 60px;
     background: #f1f1f1;
+    box-sizing: border-box;
 }
 main > .recentlist > div > div {
     float: left;
