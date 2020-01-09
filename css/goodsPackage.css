@@ -17,7 +17,7 @@ main > div > a {
 
 main > .USA_CAN > .travel > .travel_info {
     width: 100%;
-    height: 1000px;
+    height: 400px;
     margin-top: 10px;
     padding-top: 25px;
     border-top: 1px solid #3c4968;
@@ -125,4 +125,71 @@ main > .USA_CAN > .travel > .travel_info > .info_txt > .btn_wrap > a:nth-of-type
     color: white;
     background: #ffa02f;
     border: 1px solid #ffa02f;
+}
+
+
+
+
+
+main .USA_CAN .travel_detail {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+main .USA_CAN .travel_detail .product_schedule {
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+}
+main .USA_CAN .travel_detail .product_schedule > .calendar {
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+    text-align: center;
+}
+main .USA_CAN .travel_detail .product_schedule > .calendar {}
+main .USA_CAN .travel_detail .product_schedule > .calendar td {
+    width: 14%;
+}
+main .USA_CAN .travel_detail .product_schedule > .calendar {}
+
+
+
+main .USA_CAN .travel_detail .product_schedule > .departure {}
+
+main .USA_CAN .travel_detail .detail_tab {
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+}
+main .USA_CAN .travel_detail .detail_tab > div {
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    color: #000000;
+    padding-top: 15px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+}
+main .USA_CAN .travel_detail .detail_tab > div h3 {
+    font-weight: 400;
+}
+main .USA_CAN .travel_detail .detail_tab > div.on {
+    background: #ffa02f;
+    border: #ffa02f;;
+}
+main .USA_CAN .travel_detail .detail_tab > div.on h3 {
+    color: white;
+}
+
+main .USA_CAN .travel_detail .detail_content {
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+main .USA_CAN .travel_detail .detail_content.on {
+    display: block;
 }
