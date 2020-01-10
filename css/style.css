@@ -24,12 +24,16 @@ a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색
     margin-right: -745px;
 }
 #side_banner > .monthlylist {
-    height: 135px;
+    height: 155px;
     margin-bottom: 25px;
-    background: url('../img/cal.png') no-repeat;
+    padding-top: 25px;
+    text-align: center;
+    background: url(../img/cal.png) no-repeat;
+    background-position-y: 20px;
     background-size: 50%;
     background-position-x: center;
-    text-align: center;
+    background-color: white;
+    border: 1px solid #f1f1f1;
     box-sizing: border-box;
 }
 #side_banner > .monthlylist span {
@@ -44,6 +48,8 @@ a {text-decoration: none; color: #111;}      /*링크타는 폰트 색 검정색
 }
 #side_banner > .todayview {
     height: 200px;
+    background: white;
+    border: 1px solid #f1f1f1;
     box-sizing: border-box;
 }
 #side_banner > .todayview > .todaytitle {
