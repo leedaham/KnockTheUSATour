@@ -88,67 +88,32 @@
             </div>
             <!-- 사이드메뉴 끝-->
             <h1>공지사항</h1>
-            <div id="board">
-                <h3>글목록</h3>
-                <!-- 리스트 -->
-                <div class="list">
-                    <p class="logout">홍길동님! 반갑습니다. <a href="#">[로그아웃]</a><p>
-                    <table>
-                        <tr>
-                            <td>번호</td>
-                            <td>제목</td>
-                            <td>글쓴이</td>
-                            <td>날짜</td>
-                            <td>조회</td>
-                        </tr>
-                    
-                        <tr>
-                            <td>1</td>
-                            <td><a href="#">테스트 제목입니다.</a>&nbsp;[3]</td>
-                            <td>홍길동</td>
-                            <td>18-03-01</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><a href="#">테스트 제목입니다.</a>&nbsp;[3]</td>
-                            <td>홍길동</td>
-                            <td>18-03-01</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><a href="#">테스트 제목입니다.</a>&nbsp;[3]</td>
-                            <td>홍길동</td>
-                            <td>18-03-01</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><a href="#">테스트 제목입니다.</a>&nbsp;[3]</td>
-                            <td>홍길동</td>
-                            <td>18-03-01</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><a href="#">테스트 제목입니다.</a>&nbsp;[3]</td>
-                            <td>홍길동</td>
-                            <td>18-03-01</td>
-                            <td>12</td>
-                        </tr>
-                    </table>
-                </div>
-                <!-- 페이징 -->
-                <nav class="paging">
-                    <span> 
-                    <a href="#" class="prev">이전</a>
-                    <a href="#" class="num">1</a>
-                    <a href="#" class="next">다음</a>
-                    </span>
-                </nav>
-                <a href="#" class="btnWrite">글쓰기</a>
-            </div>
+            <div class="write">
+				<form action="#" method="post">
+					<table>
+						<tr>
+							<td>제목</td>
+							<td><input type="text" name="subject" placeholder="제목을 입력하세요." required /></td>
+						</tr>				
+						<tr>
+							<td>내용</td>
+							<td>
+								<textarea name="content" rows="20" required></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>첨부</td>
+							<td>
+								<input type="file" name="file" />
+							</td>
+						</tr>
+					</table>
+					<div class="btns">
+						<a href="#" class="cancel">취소</a>
+						<input type="submit" class="submit" value="작성완료" />
+					</div>
+				</form>
+			</div>
         </div>
     </main>
     <!-- 콘텐츠 끝 -->

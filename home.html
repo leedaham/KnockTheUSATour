@@ -10,12 +10,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script>
+    <script>    
         $(function(){
-            
+            $('.slider').bxSlider({
+                adaptiveHeight:true,
+                auto:true,
+                speed:1500,
+                pause:3000,
+                pager:false,
+                controls:false
 
             });
         });
+    </script>
     </script>
 </head>
 <body>
@@ -74,12 +81,13 @@
         <div class="adbanner1">
             <ul class="slider">
                 <li>
-                    <img src="./img/lv_banner.png" alt="banner_lasvegas">
-                    <h3>Las Vegas</h3>
+                    <img src="./img/home_banner_lv.png" alt="banner_lasvegas">                    
                 </li>
                 <li>
-                    <img src="./img/la_banner.png" alt="banner_losangeles">
-                    <h3>Los Angeles</h3>
+                    <img src="./img/home_banner_la.png" alt="banner_losangeles">                    
+                </li>
+                <li>
+                    <img src="./img/home_banner_se.png" alt="banner_seattle">                    
                 </li>
             </ul>
         </div>
